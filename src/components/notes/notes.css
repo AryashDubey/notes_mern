@@ -1,0 +1,35 @@
+.notes {
+  display: flex;
+  background-color: #fefeb7;
+  height: 10em;
+  width: 10em;
+  margin: 2em;
+  padding: 1em;
+  flex-direction: column;
+  transform: rotate(6deg);  transition: all ease 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.notes:nth-child(even) {
+  transform: rotate(3deg);
+  background-color: #7afc77;
+}
+.notes:nth-child(3n) {
+  transform: rotate(-6deg);
+  background-color: #ff7eb9;
+}
+.notes:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+.notesText {
+  font-size: large;
+  font-weight: bolder;
+  flex: 1;
+}
+.notesLink {
+  display: none;
+}
