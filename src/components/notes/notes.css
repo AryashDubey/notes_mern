@@ -6,9 +6,17 @@
   margin: 2em;
   padding: 1em;
   flex-direction: column;
-  transform: rotate(6deg);  transition: all ease 0.3s;
+  transform: rotate(6deg);
+  transition: all ease 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.crossIcon {
+  display: flex;
+  position: absolute;
+  font-size: 16px;
+  right: 8px;
+  top: 8px;
 }
 .notes:nth-child(even) {
   transform: rotate(3deg);
@@ -18,17 +26,18 @@
   transform: rotate(-6deg);
   background-color: #ff7eb9;
 }
-.notes:hover {
+.notes:hover,
+.noteFocused:nth-child(n) {
   cursor: pointer;
   transform: scale(1.5);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-
 }
 
 .notesText {
   font-size: large;
   font-weight: bolder;
   flex: 1;
+  margin: 8px;
 }
 .notesLink {
   display: none;
